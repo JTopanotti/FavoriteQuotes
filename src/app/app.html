@@ -6,15 +6,15 @@
   </ion-header>
   <ion-content>
     <ion-list>
-      <button ion-button>
-        <ion-icon name="settings" item-left></ion-icon>
+      <button ion-button (click="onLoad(tabsPage)")>
+        <ion-icon name="quote" item-left></ion-icon>
         Quotes
       </button>
-      <button ion-button>
+      <button ion-button (click)="onLoad(settingsPage)">
         <ion-icon name="settings" item-left></ion-icon>
-        Quotes
+        Settings
       </button>
     </ion-list>
   </ion-content>
 </ion-menu>
-<ion-nav [root]="rootPage" #nav></ion-nav>
+<ion-nav [root]="tabsPage" #nav></ion-nav>
