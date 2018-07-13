@@ -35,4 +35,5 @@ export class FavoritesPage {
     this.quotesService.removeQuoteFromFavorites(quote);
     this.quotes = this.quotesService.getFavoriteQuotes();
   }
+
 }

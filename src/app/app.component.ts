@@ -23,7 +23,7 @@ export class MyApp {
     });
   }
 
-  onLoade(page: any){
+  onLoad(page: any){
     this.nav.setRoot(page);
     this.menuCtrl.close();
   }
